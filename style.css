@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  background-size: cover;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  display: block;
+  justify-content: center;
+  background-color: rgb(204, 71, 71);
+  border: 2px;
+  margin: auto;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+}
