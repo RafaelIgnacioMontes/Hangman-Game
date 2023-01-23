@@ -1,22 +1,50 @@
 body {
-  background-color: black;
+  display: block;
   background-size: cover;
   text-align: center;
   margin: 0;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/001/590/655/non_2x/blue-wavy-background-free-vector.jpg');
+}
+
+.container {
+  justify-content: center;
+  display: flex;
+}
+
+.game {
+  display: flex;
+  justify-content: stretch;
+  min-width: 100vw;
+  border: 2px;
+  flex-direction: row;
+  background-color: purple;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+  min-height: 500px;
+  max-width: 500px;
+  max-height: 500px;
+  background-color: white;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.typing {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  min-width: 100px;
+  max-width: 600px;
+  background-color: violet;
+  justify-content: center;
+  text-align: center;
 }
 
 h1 {
   align-items: center;
   text-align: center;
-}
-
-.container {
-  display: block;
-  justify-content: center;
-  background-color: rgb(204, 71, 71);
-  border: 2px;
-  margin: auto;
-  text-align: center;
-  flex-direction: row;
-  align-items: center;
+  font-size: 50px;
 }
