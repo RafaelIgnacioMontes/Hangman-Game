@@ -3,12 +3,44 @@ body {
   background-size: cover;
   text-align: center;
   margin: 0;
-  background-image: url('https://static.vecteezy.com/system/resources/previews/001/590/655/non_2x/blue-wavy-background-free-vector.jpg');
+  background-image: url('https://pbs.twimg.com/media/FKATGrjXsAAkdpC.jpg:large');
+  font-family: 'Black Ops One', cursive;
 }
 
 .container {
   justify-content: center;
   display: flex;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  min-height: 500px;
+  background-color: pink;
+  min-width: 500px;
+  flex-direction: row;
+}
+
+#head {
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://i.seadn.io/gae/jIJpjmlomah-X0wxIVmibwwJHGNqpyYI8Jimw9Dy20F6OaSa9Bi7-rGNSplcqvp3Lg1CYzGx85QMlly5jkIiK4Z5mfVkO7XxivfF?auto=format&w=1000');
+  background-size: contain;
+  min-width: 100px;
+  max-height: 100px;
+  min-height: 150px;
+  justify-content: center;
+}
+
+#Larm {
+  background-color: blue;
+}
+#Rarm {
+  background-color: blue;
+}
+#Lleg {
+}
+#Rleg {
 }
 
 .game {
@@ -20,13 +52,26 @@ body {
   background-color: purple;
 }
 
-.board {
+.display {
+  display: flex;
+  justify-content: top;
+  justify-content: center;
+  min-height: 500px;
+  background-color: pink;
+  min-width: 500px;
+  flex-direction: column;
+}
+
+label {
+  color: white;
+}
+
+#board {
   display: flex;
   flex-direction: column;
-  min-width: 500px;
-  min-height: 500px;
-  max-width: 500px;
-  max-height: 500px;
+  min-width: 100px;
+  min-height: 50px;
+  max-height: 100px;
   background-color: white;
   justify-content: center;
   align-items: stretch;
@@ -47,4 +92,5 @@ h1 {
   align-items: center;
   text-align: center;
   font-size: 50px;
+  color: white;
 }

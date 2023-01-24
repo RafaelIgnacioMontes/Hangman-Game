@@ -5,26 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <h1>Hangman Game</h1>
   <body>
     <div class="container">
       <div class="Game">
-        <section class="display">Display here</section>
-        <section class="board">Frog WORD</section>
+        <section class="display">
+          <div class="head">
+            <div id="head"></div>
+          </div>
+          <div id="Larm"></div>
+          <div id="Rarm"></div>
+          <div id="Lleg"></div>
+          <div id="Rleg"></div>
+        </section>
+        <section id="board">Frog</section>
         <label for="Letter">Letter:</label>
         <input
           type="text"
           id="Letter"
           letter="Letter"
           placeholder="insert guess here"
+          maxlength="1"
         />
         <button type="submit">Submit</button>
       </div>
     </div>
-    <div id="input">R</div>
-    <div id="tracker">E</div>
+    <div id="input"></div>
+    <div id="tracker"></div>
+    <script deffer type="text/javascript" src="script.js"></script>
   </body>
 </html>
