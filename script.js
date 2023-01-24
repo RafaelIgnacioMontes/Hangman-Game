@@ -2,18 +2,26 @@ let buttonInput = document.querySelector('button')
 
 let textType = document.querySelector('input')
 
-let keyWord = document.getElementById('board').innerText.toUpperCase()
+window.keyWord = 0
+
+let secretDisplay = document.getElementById('board')
 
 let revealArray = []
 
+let revealDisplay = () => {
+  secretDisplay.innerText = revealArray
+}
+
 let letterFunction = () => {
   for (i = 0; i < keyWord.length; i++) {
-    if (textType.value.toUpperCase() === keyWord[i]) {
-      revealArray[i] = keyWord[i]
+    if (textType.value.toUpperCase() === window.keyWord[i]) {
+      revealArray[i] = window.keyWord[i]
     } else if (revealArray[i] != '_') {
+    } else {
+      revealArray[i] = '_'
     }
   }
-  console.log(revealArray)
+  revealDisplay()
 }
 
 buttonInput.addEventListener('click', letterFunction)

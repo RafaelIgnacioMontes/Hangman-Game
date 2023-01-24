@@ -24,7 +24,7 @@
           <div id="Lleg"></div>
           <div id="Rleg"></div>
         </section>
-        <section id="board">Frog</section>
+        <section id="board"></section>
         <label for="Letter">Letter:</label>
         <input
           type="text"
@@ -38,6 +38,13 @@
     </div>
     <div id="input"></div>
     <div id="tracker"></div>
+    <script type="module">
+      import { faker } from 'https://cdn.skypack.dev/@faker-js/faker'
+      const randomName = faker.name.fullName()
+      const randomEmail = faker.internet.email()
+      window.keyWord = faker.word.noun().toUpperCase()
+      console.log(window.keyWord)
+    </script>
     <script deffer type="text/javascript" src="script.js"></script>
   </body>
 </html>
