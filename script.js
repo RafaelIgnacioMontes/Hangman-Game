@@ -2,17 +2,19 @@ let buttonInput = document.querySelector('button')
 
 let textType = document.querySelector('input')
 
-window.keyWord = 0
-
 let boxElements = []
 
-for (let i = 1; i < 7; i++) {
+for (let i = 1; i < 6; i++) {
   let id = 'box' + i
   boxElements.push(document.getElementById(id))
 }
 let secretDisplay = document.getElementById('board')
 
 let revealArray = []
+
+let incorrectGuess = 0
+
+let updateCount = 0
 
 const setRevealArray = () => {
   if (revealArray.length === 0) {
@@ -23,17 +25,13 @@ const setRevealArray = () => {
   console.log(revealArray)
 }
 
-let incorrectGuess = 0
-
 let revealBox = () => {
-  let updateCount = 0
-  boxElements.forEach((box) => {
-    console.log(updateCount)
-    if (box.style.visibility !== 'visible' && updateCount === 0) {
-      box.style.visibility = 'visible'
-      updateCount++
-    }
-  })
+  console.log(updateCount)
+  if (boxElements[updateCount].style.visibility !== 'visible') {
+    boxElements[updateCount].style.visibility = 'visible'
+  }
+  updateCount++
+  document.getElementById('boxcount').innerText = updateCount
 }
 
 let revealDisplay = () => {
@@ -45,7 +43,8 @@ let revealDisplay = () => {
 
 let letterFunction = () => {
   setRevealArray()
-  console.log(window.keyWord)
+  console.warn(revealArray)
+  console.warn(window.keyWord.split(''))
   let guessCorrectLetter = false
   for (let i = 0; i < keyWord.length; i++) {
     if (
@@ -62,7 +61,21 @@ let letterFunction = () => {
     incorrectGuess++
     revealBox()
   }
+  console.log(revealArray, window.keyWord.split(''))
+  if (revealArray.toString() == window.keyWord.split('')) {
+    console.log(revealArray)
+    console.log(window.keyWord.split(''))
+    return
+  }
   revealDisplay()
 }
+
+// let winCondition = () => {
+//   console.log(letters)
+//   if (revealArray === revealArray) {
+//     alert('GAMEEND')
+//     return
+//   }
+// }
 
 buttonInput.addEventListener('click', letterFunction)

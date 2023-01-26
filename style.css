@@ -14,8 +14,11 @@ body {
 
 .row {
   display: flex;
+  min-height: 250px;
+  max-height: 250px;
   flex-direction: row;
-  flex: 1;
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
 }
 
 #row1 {
@@ -46,7 +49,7 @@ body {
   flex: 1;
   border-width: 0 1px 0 1px;
   border-color: black;
-
+  align-items: center;
   align-items: center;
   justify-content: center;
 }
@@ -62,32 +65,37 @@ body {
   background-image: url('https://m.media-amazon.com/images/I/51fyNbNkKNL._AC_SY580_.jpg');
   background-size: contain;
   visibility: hidden;
+  background-repeat: no-repeat;
 }
 #box2 {
   background-image: url('https://static-7.studiobebop.net/ygo_data/card_variants/LDK2-ENY04.jpg');
   background-size: contain;
   visibility: hidden;
+  background-repeat: no-repeat;
 }
 #box3 {
   background-image: url('https://ygoprodeck.com/cdn-cgi/image/format=auto,width=313/https://images.ygoprodeck.com/images/cards/7902349.jpg');
   background-size: contain;
   visibility: hidden;
+  background-repeat: no-repeat;
 }
 #box4 {
   background-image: url('https://ygoprodeck.com/cdn-cgi/image/format=auto,width=313/https://images.ygoprodeck.com/images/cards/8124921.jpg');
   background-size: contain;
   visibility: hidden;
-}
-#box5 {
-  background-image: url('https://media.tenor.com/eEzbynF6WJYAAAAd/exodia-yu-gi-oh.gif');
-  background-size: 168px 245px;
-  visibility: hidden;
+  background-repeat: no-repeat;
 }
 
-#box6 {
+#boxcount {
+  color: white;
+  font-size: 4rem;
+}
+
+#box5 {
   background-image: url('https://ygoprodeck.com/cdn-cgi/image/format=auto,width=313/https://images.ygoprodeck.com/images/cards/44519536.jpg');
-  background-size: cover;
+  background-size: contain;
   visibility: hidden;
+  background-repeat: no-repeat;
 }
 
 .game {
