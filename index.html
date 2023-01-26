@@ -11,7 +11,10 @@
     />
     <title>Document</title>
   </head>
-  <h1>Hangman Game</h1>
+  <h1>Stop Exodia!</h1>
+  <h2>
+    <a class="btnforwindow" href="index2.html">How to Play</a>
+  </h2>
   <body>
     <div class="container">
       <button id="playagain">Play Again</button>
@@ -55,5 +58,11 @@
       console.log(window.keyWord)
     </script>
     <script deffer type="text/javascript" src="script.js"></script>
+    <script>
+      let Mywindow
+      function openWin() {
+        Mywindow = window.open('', '', 'width=100, height=100')
+      }
+    </script>
   </body>
 </html>

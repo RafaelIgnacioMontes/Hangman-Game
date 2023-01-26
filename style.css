@@ -12,6 +12,10 @@ body {
   display: flex;
 }
 
+.btnforwindow {
+  color: white;
+}
+
 #playagain {
   visibility: hidden;
   position: fixed;
