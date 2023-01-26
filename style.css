@@ -28,8 +28,11 @@ body {
   min-height: 250px;
   max-height: 250px;
   flex-direction: row;
-  /* justify-content: space-around; */
-  /* justify-content: space-between; */
+}
+
+#youlose {
+  font-size: 2rem;
+  color: white;
 }
 
 #row1 {
@@ -147,7 +150,6 @@ label {
   min-height: 100px;
   min-width: 100px;
   max-width: 600px;
-  /* background-color: violet; */
   justify-content: center;
   text-align: center;
 }

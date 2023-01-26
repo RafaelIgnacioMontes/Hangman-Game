@@ -69,6 +69,11 @@ const letterFunction = () => {
     console.log(window.keyWord.split(''))
     buttonInput.removeEventListener('click', letterFunction)
     playAgainButton.style.visibility = 'visible'
+  } else {
+    if (updateCount >= 5) {
+      document.getElementById('youlose').innerText = 'OBLITERATED'
+      return
+    }
   }
   revealDisplay()
 }
