@@ -1,8 +1,10 @@
-let buttonInput = document.querySelector('button')
+let buttonInput = document.getElementById('submitbutton')
 
 let textType = document.querySelector('input')
 
 let boxElements = []
+
+let playAgainButton = document.getElementById('playagain')
 
 for (let i = 1; i < 6; i++) {
   let id = 'box' + i
@@ -25,7 +27,7 @@ const setRevealArray = () => {
   console.log(revealArray)
 }
 
-let revealBox = () => {
+const revealBox = () => {
   console.log(updateCount)
   if (boxElements[updateCount].style.visibility !== 'visible') {
     boxElements[updateCount].style.visibility = 'visible'
@@ -34,14 +36,14 @@ let revealBox = () => {
   document.getElementById('boxcount').innerText = updateCount
 }
 
-let revealDisplay = () => {
+const revealDisplay = () => {
   secretDisplay.innerText = ''
   for (let i = 0; i < revealArray.length; i++) {
     secretDisplay.innerText = secretDisplay.innerText + ' ' + revealArray[i]
   }
 }
 
-let letterFunction = () => {
+const letterFunction = () => {
   setRevealArray()
   console.warn(revealArray)
   console.warn(window.keyWord.split(''))
@@ -65,17 +67,10 @@ let letterFunction = () => {
   if (revealArray.toString() == window.keyWord.split('')) {
     console.log(revealArray)
     console.log(window.keyWord.split(''))
-    return
+    buttonInput.removeEventListener('click', letterFunction)
+    playAgainButton.style.visibility = 'visible'
   }
   revealDisplay()
 }
-
-// let winCondition = () => {
-//   console.log(letters)
-//   if (revealArray === revealArray) {
-//     alert('GAMEEND')
-//     return
-//   }
-// }
 
 buttonInput.addEventListener('click', letterFunction)

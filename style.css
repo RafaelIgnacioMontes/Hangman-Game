@@ -12,6 +12,13 @@ body {
   display: flex;
 }
 
+#playagain {
+  visibility: hidden;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
 .row {
   display: flex;
   min-height: 250px;
