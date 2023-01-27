@@ -66,7 +66,7 @@ const letterFunction = () => {
     playAgainButton.style.visibility = 'visible'
   } else {
     if (updateCount >= 5) {
-      document.getElementById('youlose').innerText = `OBLITERATE`
+      document.getElementById('youlose').innerText = `OBLITERATED`
       playAgainButton.style.visibility = 'visible'
       gameState === true
       return

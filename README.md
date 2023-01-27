@@ -1,5 +1,8 @@
 # Stop Exodia!
 
+## By Rafael Montes
+[Game](exodia-obliterate.surge.sh) || [LinkedIn](www.linkedin.com/in/rafael-montes-9040491a5)|| [GitHub](https://github.com/RafaelIgnacioMontes)
+
 ## Description
 
 * Hangman game where you guess letter by letter until you guess the word before the attempts run out.
