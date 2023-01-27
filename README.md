@@ -1,4 +1,4 @@
-# Hangman-Game
+# Stop Exodia!
 
 ## Description
 
