@@ -24,11 +24,9 @@ const setRevealArray = () => {
       revealArray.push('_')
     }
   }
-  console.log(revealArray)
 }
 
 const revealBox = () => {
-  console.log(updateCount)
   if (boxElements[updateCount].style.visibility !== 'visible') {
     boxElements[updateCount].style.visibility = 'visible'
   }
@@ -45,8 +43,6 @@ const revealDisplay = () => {
 
 const letterFunction = () => {
   setRevealArray()
-  console.warn(revealArray)
-  console.warn(window.keyWord.split(''))
   let guessCorrectLetter = false
   for (let i = 0; i < keyWord.length; i++) {
     if (
@@ -55,27 +51,26 @@ const letterFunction = () => {
     ) {
       revealArray[i] = window.keyWord[i]
       guessCorrectLetter = true
-    } else {
-      console.log(revealArray)
     }
   }
   if (guessCorrectLetter === false) {
     incorrectGuess++
     revealBox()
   }
-  console.log(revealArray, window.keyWord.split(''))
   if (revealArray.toString() == window.keyWord.split('')) {
-    console.log(revealArray)
-    console.log(window.keyWord.split(''))
     buttonInput.removeEventListener('click', letterFunction)
     playAgainButton.style.visibility = 'visible'
   } else {
     if (updateCount >= 5) {
-      document.getElementById('youlose').innerText = 'OBLITERATED'
+      document.getElementById('youlose').innerText = `OBLITERATE`
+      playAgainButton.style.visibility = 'visible'
+      gameState === true
       return
     }
   }
   revealDisplay()
 }
+
+playAgainButton.addEventListener('click', setRevealArray)
 
 buttonInput.addEventListener('click', letterFunction)

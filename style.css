@@ -19,8 +19,9 @@ body {
 #playagain {
   visibility: hidden;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  align-items: top;
+  min-height: 50px;
+  min-width: 100px;
 }
 
 .row {
@@ -139,7 +140,8 @@ label {
   min-width: 100px;
   min-height: 50px;
   max-height: 100px;
-  background-color: white;
+  /* background-color: white; */
+  color: white;
   justify-content: center;
   align-items: stretch;
 }
