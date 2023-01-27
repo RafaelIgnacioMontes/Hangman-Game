@@ -27,6 +27,12 @@ This hangman game has an API of words that it will pull form to create a differe
 ### - Maximum of 1 character per guess
 ### - When guessing correctly it substitutes a value in the line for the correct letter
 
+#
+# Still to come
+### - Scoreboard that tracks your progress
+### - Audio queues for the game
+### - Shows the word if you get a incorrect guess
+
 
 # 
 # Links
