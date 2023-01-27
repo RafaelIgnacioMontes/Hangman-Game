@@ -17,6 +17,17 @@ This hangman game has an API of words that it will pull form to create a differe
 ### - Make sure all HTML elements are in place and that all the CSS edits are properly done to reflect the hangman game. 
 ### - After this is done we will begin with Javascript.
 
+#
+# Game Functionality
+
+### - Able to randomly generate a word (noun) to guess.
+### - Has in game instructions on the page
+### - Once you have guessed 5 times incorrectly game ends and you lose
+### - Once game ends you are able to hit play again button to get a new word and restart the game
+### - Maximum of 1 character per guess
+### - When guessing correctly it substitutes a value in the line for the correct letter
+
+
 # 
 # Links
 
@@ -24,6 +35,7 @@ This hangman game has an API of words that it will pull form to create a differe
 ### - GitHub: https://github.com/SEI-R-1-9/class_wiki
 ### - MDN: https://developer.mozilla.org/en-US/
 ### - Google Images
+### - Surge domain: exodia-obliterate.surge.sh
 
 
 

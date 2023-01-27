@@ -90,7 +90,7 @@ body {
   visibility: hidden;
   background-repeat: no-repeat;
 }
-s #box3 {
+#box3 {
   background-image: url('https://ygoprodeck.com/cdn-cgi/image/format=auto,width=313/https://images.ygoprodeck.com/images/cards/7902349.jpg');
   background-size: contain;
   visibility: hidden;
