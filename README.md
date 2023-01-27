@@ -21,5 +21,9 @@ This hangman game has an API of words that it will pull form to create a differe
 # Links
 
 ### - Trello: https://trello.com/b/vriwXQJK/hangman-game
+### - GitHub: https://github.com/SEI-R-1-9/class_wiki
+### - MDN: https://developer.mozilla.org/en-US/
+### - Google Images
+
 
 

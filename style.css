@@ -20,8 +20,10 @@ body {
   visibility: hidden;
   position: fixed;
   align-items: top;
+  font-size: 2rem;
   min-height: 50px;
   min-width: 100px;
+  color: black;
 }
 
 .row {
@@ -88,7 +90,7 @@ body {
   visibility: hidden;
   background-repeat: no-repeat;
 }
-#box3 {
+s #box3 {
   background-image: url('https://ygoprodeck.com/cdn-cgi/image/format=auto,width=313/https://images.ygoprodeck.com/images/cards/7902349.jpg');
   background-size: contain;
   visibility: hidden;

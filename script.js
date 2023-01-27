@@ -18,6 +18,10 @@ let incorrectGuess = 0
 
 let updateCount = 0
 
+let restartGame = () => {
+  document.location = 'index.html'
+}
+
 const setRevealArray = () => {
   if (revealArray.length === 0) {
     for (let i = 0; i < window.keyWord.length; i++) {
@@ -71,6 +75,5 @@ const letterFunction = () => {
   revealDisplay()
 }
 
-playAgainButton.addEventListener('click', setRevealArray)
-
 buttonInput.addEventListener('click', letterFunction)
+playAgainButton.addEventListener('click', restartGame)
